@@ -50,7 +50,34 @@ table {
 * {
     box-sizing: border-box;
 }
+header{
+    display: flex;
+    width:80%;
+    margin-left: 18%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    
+}
+header a{
+   
+    color:black;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-left:7%;
+    margin-top: 3%;
+    font-size: 16px;
+}
+a:hover{
+    transform: scale(2, 3);
+}
+img{
+    justify-content: center;
+    
 
+}
+.street{
+    margin:3% 0% 1% 18%;
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -60,6 +87,7 @@ h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+    margin-top: 15px;
 }
 
 p {
@@ -101,10 +129,10 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: teal;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,6 +140,33 @@ p {
     justify-content: center;
 }
 
+.box2 {
+    background: gold; 
+}
+.box3{
+    background: cadetblue;
+}
+.box4 {
+    background: coral;
+}
+.box5 {
+    background: crimson;
+}
+.box6 {
+    background: forestgreen;
+}
+.box7 {
+    background: darkorchid;
+}
+.box8 {
+    background: hotpink;
+}
+.box9 {
+    background: indigo;
+}
+.box10 {
+    background: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +198,51 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+.bigabout{
+    border-bottom: 1px dashed black;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+.topabout{
+    margin-left: 1%;
+    margin-bottom: 3%;
+}
+
+.bigcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.strategy, .wework, .places, .colab {
+    width:374px;
+    border-bottom: 1px dashed black;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+}
+button{
+  color:black;
+  padding: 10px 30px;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+button:hover{
+    animation-name: buttonhover;
+  animation-duration: 5s;
+  transform: rotate(35deg);
+}
+
+.together{
+    margin: 0 0 4% 2% ;
+}
+
+@keyframes buttonhover {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
 }
